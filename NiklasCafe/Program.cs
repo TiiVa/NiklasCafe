@@ -7,7 +7,7 @@ var coffeeService = new CoffeeService();
 var milkService = new MilkService();
 var sugarService = new SugarService();
 var drinkHandler = new DrinkHandler(coffeeService, milkService, sugarService);
-
+Console.WriteLine();
 
 
 Console.WriteLine(drinkHandler.Drink); //ToString anropas
