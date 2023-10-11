@@ -4,6 +4,7 @@ namespace NiklasCafe.Services;
 
 public class MilkService
 {
+
     public event Action<Ingredient> MilkAdded;
 
     public void AddMilk()

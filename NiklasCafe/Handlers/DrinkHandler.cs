@@ -24,6 +24,13 @@ public class DrinkHandler
         _sugarService.SugarAdded += SugarServiceOnSugarAdded;
     }
 
+    public void PrepareDrink()
+    {
+        _coffeeService.PrepareCoffee();
+        _sugarService.AddSugar();
+        _milkService.AddMilk();
+    }
+
     private void SugarServiceOnSugarAdded(Ingredient sugar)
     {
         Drink.Ingredients.Add(sugar);
