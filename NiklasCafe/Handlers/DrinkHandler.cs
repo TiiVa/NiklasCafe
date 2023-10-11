@@ -24,13 +24,15 @@ public class DrinkHandler
         _sugarService.SugarAdded += SugarServiceOnSugarAdded;
     }
 
-    private void SugarServiceOnSugarAdded()
+    private void SugarServiceOnSugarAdded(Ingredient sugar)
     {
+        Drink.Ingredients.Add(sugar);
         Console.WriteLine("Sugar added");
     }
 
-    private void MilkServiceOnMilkAdded()
+    private void MilkServiceOnMilkAdded(Ingredient milk)
     {
+        Drink.Ingredients.Add(milk);
         Console.WriteLine("Milk added");
     }
 
