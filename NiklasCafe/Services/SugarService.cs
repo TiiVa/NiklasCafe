@@ -8,9 +8,9 @@ public class SugarService
 
     public async Task AddSugar()
     {
-        Console.WriteLine("Adding sugar");
+        Console.WriteLine("Adding sugar cubes.");
         await Task.Delay(1000);
-        var sugar = new Ingredient() { Name = "Sugar" };
+        var sugar = new Ingredient() {Name = "Sugar"};
         SugarAdded.Invoke(sugar);
     }
 }

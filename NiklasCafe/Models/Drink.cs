@@ -1,4 +1,6 @@
-﻿namespace NiklasCafe.Models;
+﻿using System.Text;
+
+namespace NiklasCafe.Models;
 
 public class Drink
 {
@@ -6,7 +8,7 @@ public class Drink
 
     public override string ToString()
     {
-        var drinkDescription = "";
+        var drinkDescription = string.Empty;
 
         drinkDescription += "The drink contains:\n";
 

@@ -8,9 +8,9 @@ public class CheeseService
 
     public async Task AddCheese()
     {
-        Console.WriteLine("Carving cheese");
+        Console.WriteLine("Carving cheese.");
         await Task.Delay(5000);
-        var cheese = new Ingredient() { Name = "Cheese" };
+        var cheese = new Ingredient(){Name = "Cheese"};
         CheeseAdded.Invoke(cheese);
     }
 }

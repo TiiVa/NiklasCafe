@@ -8,9 +8,9 @@ public class TomatoService
 
     public async Task AddTomato()
     {
-        Console.WriteLine("Slicing tomato");
-        await Task.Delay(3000);
-        var tomato = new Ingredient() { Name = "Tomato" };
+        Console.WriteLine("Slicing Tomato.");
+        await Task.Delay(2000);
+        var tomato = new Ingredient() {Name = "Tomato"};
         TomatoAdded.Invoke(tomato);
     }
 }

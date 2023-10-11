@@ -8,9 +8,9 @@ public class ButterService
 
     public async Task ApplyButter()
     {
-        Console.WriteLine("Spreading butter");
+        Console.WriteLine("Spreading butter.");
         await Task.Delay(4000);
         var butter = new Ingredient(){Name = "Butter"};
-        ButterApplied.Invoke( butter );
+        ButterApplied.Invoke(butter);
     }
 }

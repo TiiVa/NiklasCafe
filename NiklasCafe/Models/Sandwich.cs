@@ -6,15 +6,15 @@ public class Sandwich
 
     public override string ToString()
     {
-        var sandWichDescription = "";
+        var sandwichDescription = string.Empty;
 
-        sandWichDescription += "The sandwich contains:\n";
+        sandwichDescription += "The sandwich contains:\n";
 
-        foreach (var sandWichIngredient in Ingredients)
+        foreach (var sandwichIngredient in Ingredients)
         {
-            sandWichDescription += $"\t{sandWichIngredient.Name}\n";
+            sandwichDescription += $"\t{sandwichIngredient.Name}\n";
         }
 
-        return sandWichDescription;
+        return sandwichDescription;
     }
 }
