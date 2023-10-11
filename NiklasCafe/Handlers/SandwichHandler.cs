@@ -42,11 +42,11 @@ public class SandwichHandler
         Console.WriteLine("Butter applied.");
     }
 
-    public void PrepareSandwich()
+    public async Task PrepareSandwich()
     {
         Console.WriteLine("Making sandwich");
-        _butterService.ApplyButter();
-        _cheeseService.AddCheese();
-        _tomatoService.AddTomato();
+        await _butterService.ApplyButter();
+        await _cheeseService.AddCheese();
+        await _tomatoService.AddTomato();
     }
 }

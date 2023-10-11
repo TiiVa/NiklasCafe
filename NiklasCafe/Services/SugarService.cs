@@ -6,10 +6,10 @@ public class SugarService
 {
     public event Action<Ingredient> SugarAdded;
 
-    public void AddSugar()
+    public async Task AddSugar()
     {
         Console.WriteLine("Adding sugar cubes.");
-        Thread.Sleep(1000);
+        await Task.Delay(1000);
         var sugar = new Ingredient() {Name = "Sugar"};
         SugarAdded.Invoke(sugar);
     }
